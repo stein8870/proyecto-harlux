@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harlux</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="logo">Harlux</div>
+        <div class="user-options">
+            <button id="register-btn" class="icon-button">
+    <i class="fas fa-user-circle"></i>
+</button>
+            <a href="http://127.0.0.1:5500/Compras/index.html" class="cart-button">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+    </header>
+
+    <nav class="secondary-bar">
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links">
+            <a href="#mas-vendidos">Producto más vendidos</a>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#lo-mas-nuevo">Lo más nuevo</a>
+        </div>
+    </nav>
+
+    <div class="side-menu" id="side-menu">
+        <a href="#">Sobre Nosotros</a>
+        <a href="#">Más Vendidos</a>
+        <a href="#">Catálogo</a>
+    </div>
+
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup" id="register-popup">
+            <button class="close-btn">&times;</button>
+            <h2>Crear Cuenta</h2>
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="tel" placeholder="Número de teléfono" required>
+            <input type="password" placeholder="Contraseña" required>
+            <div class="popup-buttons">
+                <button class="action-btn">Crear Usuario</button>
+                <button class="secondary-btn" id="show-login-btn">Ya tengo cuenta (Login)</button>
+            </div>
+        </div>
+        <div class="popup" id="login-popup">
+            <button class="close-btn">&times;</button>
+            <h2>Iniciar Sesión</h2>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <div class="popup-buttons">
+                <button class="action-btn">Login</button>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="content">
+
+        <section class="offer-slider-container">
+            <div class="offer-slider">
+                <a href="#" class="slide" style="background-image: url(/Imagen/Imagen1.jpg);"></a>
+                <a href="#" class="slide" style="background-image: url(/Imagen/Imagen2.jpg);"></a>
+                <a href="#" class="slide" style="background-image: url(/Imagen/Imagen3.jpg);"></a>
+                <a href="#" class="slide" style="background-image: url(/Imagen/Imagen4.jpg);"></a>
+            </div>
+        </section>
+
+        <section class="ad-banner">
+            <a href="#"><img src="./Imagen/Anuncio.jpg" alt="Anuncio principal"></a>
+        </section>
+
+        <div class="product-sections">
+            <section id="mas-vendidos">
+                <h2>Lo Más Vendido</h2>
+                <div class="product-scroll" id="scroll-mas-vendidos">
+                    </div>
+            </section>
+
+            <section id="lo-mas-nuevo">
+                <h2>Productos Nuevos</h2>
+                <div class="product-scroll" id="scroll-lo-mas-nuevo">
+                     </div>
+            </section>
+
+            <section id="ofertas">
+                <h2>Productos en Oferta</h2>
+                <div class="product-scroll" id="scroll-ofertas">
+                     </div>
+            </section>
+        </div>
+
+    
+
+        <!-- Contenedor estilos-->
+<section class="seccion-estilos">
+    <h2 class="titulo-estilos">Estilos de pisos</h2>
+    <div class="estilos-grid">
+        <a href="http://127.0.0.1:5500/Seccion/index.html" class="estilo-card">
+            <div class="estilo-imagen">
+                <img src="/Imagen/ImagenProductos/Piso ceramico santal.jpg" alt="Tipo mármol">
+            </div>
+            <p class="estilo-nombre">Tipo mármol <span class="flecha">&gt;</span></p>
+        </a>
+
+        <a href="#" class="estilo-card">
+            <div class="estilo-imagen">
+                <img src="/Imagen/ImagenProductos/tipo madera.jpg" alt="Tipo madera">
+            </div>
+            <p class="estilo-nombre">Tipo madera <span class="flecha">&gt;</span></p>
+        </a>
+
+        <a href="#" class="estilo-card">
+            <div class="estilo-imagen">
+                <img src="/Imagen/ImagenProductos/exterior.jpg" alt="Exterior">
+            </div>
+            <p class="estilo-nombre">Exterior <span class="flecha">&gt;</span></p>
+        </a>
+
+        <a href="#" class="estilo-card">
+            <div class="estilo-imagen">
+                <img src="/Imagen/ImagenProductos/piedra.jpg" alt="Tipo piedra">
+            </div>
+            <p class="estilo-nombre">Tipo piedra <span class="flecha">&gt;</span></p>
+        </a>
+
+        <a href="#" class="estilo-card">
+            <div class="estilo-imagen">
+                <img src="/Imagen/ImagenProductos/tablon ceramico.jpg" alt="Tablón cerámico">
+            </div>
+            <p class="estilo-nombre">Tablón cerámico <span class="flecha">&gt;</span></p>
+        </a>
+
+        <a href="#" class="estilo-card">
+            <div class="estilo-imagen">
+                <img src="/Imagen/ImagenProductos/antiderrapante.jpg" alt="Antiderrapantes">
+            </div>
+            <p class="estilo-nombre">Antiderrapantes <span class="flecha">&gt;</span></p>
+        </a>
+        
+        <a href="#" class="estilo-card">
+            <div class="estilo-imagen">
+                <img src="/Imagen/ImagenProductos/rusdtico.jpg" alt="Tipo rústico">
+            </div>
+            <p class="estilo-nombre">Tipo rústico <span class="flecha">&gt;</span></p>
+        </a>
+
+        <a href="#" class="estilo-card">
+            <div class="estilo-imagen">
+                <img src="/Imagen/ImagenProductos/patrones.jpg" alt="Con patrones">
+            </div>
+            <p class="estilo-nombre">Con patrones <span class="flecha">&gt;</span></p>
+        </a>
+    </div>
+</section>
+
+        <footer class="contact-footer">
+            <h2>Sobre Nosotros</h2>
+            <p>En Harlux, nos dedicamos a ofrecer los mejores acabados para tu hogar. Calidad y diseño a tu alcance.</p>
+            <h3>Ubicación</h3>
+            <p>Av. Siempre Viva 123, Springfield</p>
+            <h3>Contacto</h3>
+            <p>Email: <a href="mailto:contacto@harlux.com">contacto@harlux.com</a></p>
+            <p>Teléfono: <a href="tel:+521234567890">+52 123 456 7890</a></p>
+        </footer>
+
+    </main>
+
+    <a href="https://wa.me/521234567890?text=Hola!%20Me%20gustaría%20pedir%20información." class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <script src="script.js"></script>
+</body>
+</html>
